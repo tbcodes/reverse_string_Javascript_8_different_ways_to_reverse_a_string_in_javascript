@@ -1,0 +1,82 @@
+// How to reverse a string in Javascript:
+// Youtube link: https://youtu.be/sE5-z2wC-2s
+
+// Method 1 - Using Negative-index:
+function stringRev(str){
+  let myMessage = "";
+  for(let i = str.length - 1; i >= 0; i--){
+    myMessage = myMessage + str[i];
+    // myMessage = myMessage + str.charAt(i);
+    console.log("Valor de myMessage:", myMessage)
+  }
+  return myMessage;
+}
+
+console.log(stringRev("Hello"));  // Output: "olleH"
+
+// Method 2 - Using JS Built-in Functions:
+
+function stringRev2(str){
+  let myMessage = str.split('');
+  let reversedMyMessage = myMessage.reverse();
+  let finalReverse = reversedMyMessage.join('');
+  return finalReverse;
+}
+
+console.log(stringRev2("Hello Truzz Blogg"))
+
+// Method 3 - All together:
+
+function strngRev3(str){
+   return str.split('').reverse().join('');
+}
+
+console.log(strngRev3("Hi there!"))
+
+
+// Method 4: Using Arrow Functions:
+
+let revString =(str) => str.split('').reverse().join('');
+
+console.log(revString("Hi there. How are you today"))
+
+// Method 5: For of
+
+function stringRev(str) {
+  let reversedMessage = "";
+  for(let mychar of str) {
+    reversedMessage = mychar + reversedMessage;
+    console.log("Iterating on for of loop:", reversedMessage)
+  }
+  return reversedMessage;
+}
+
+console.log(stringRev("How are you today"))
+
+// Method 6: For of + Arrow Function
+
+const stringRev = str => {
+  let reversedMessage = "";
+  for(let mychar of str) {
+    reversedMessage = mychar + reversedMessage;
+  }
+  return reversedMessage;
+}
+
+console.log(stringRev("Youtube"));
+
+// Method 7 - Spread Operator:
+
+function stringRev(str){
+  return [...str].reverse().join('');
+}
+
+console.log(stringRev('Reverse a string using Spread Operator'))
+
+// Method 8: Arrow Functions + Reduce()
+
+const stringRev = str => { 
+  return str.split("").reduce((rev, mychar) => mychar + rev, ""); 
+}; 
+
+console.log(stringRev('Hola que tal'))
