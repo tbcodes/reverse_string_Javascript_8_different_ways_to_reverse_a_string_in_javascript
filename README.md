@@ -1,2 +1,5 @@
-# reverse_string_Javascript_8_different_ways_to_reverse_a_string_in_javascript
-Learn 8 different ways to reverse a string in Javascript
+# Reverse a String in Javascript: 8 different ways to reverse a string in Javascript
+## Learn 8 different ways to reverse a string in Javascript
+
+Youtube link:
+https://www.youtube.com/watch?v=sE5-z2wC-2s
